@@ -105,3 +105,45 @@ myPenguin.volar = function(){
     }
     
 }
+myPenguin.puedeVolar = true
+myPenguin.volar()
+
+// Receta
+class Receta{
+    constructor(titulo, porciones, ingredientes){
+        this.titulo = titulo
+        this.porciones = porciones
+        this.ingredientes = ingredientes
+    }
+
+    
+}
+
+var mole = new Receta('Mole',2,["canela","comino","cocoa"])
+console.log(mole)
+
+//Libro
+class Libro{
+    constructor(titulo,autor,leido){
+        this.titulo = titulo
+        this.autor = autor
+        this.leido = leido
+    }
+}
+
+var books = [
+    {
+        title: 'El coronel no tiene quien le escriba',
+        author: 'Gabriel García Márquez',
+        read: true
+    },
+    {
+        title: 'Do Androids Dream of Electric Sheep',
+        author: 'Phillip K. Dick',
+        read: false
+    }
+];
+for (var i = 0; i < books.length; i++) {
+    console.log(`Titulo: ${books[i].title}, Autor: ${books[i].author}, Leido: ${books[i].read == true ? 'si' : 'no'}`);    
+}
+
